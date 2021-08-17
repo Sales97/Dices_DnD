@@ -1,0 +1,205 @@
+body{
+    background: url("background_main.jpg");
+    background-size: 100%;
+}
+
+header{
+    padding: 10px;
+}
+
+.cabecalho{
+    background-color: rgb(76, 30, 97);
+    padding: 10px 100px;
+    border-radius: 20px;
+    margin: 0 auto;
+    position: relative;
+    width: 940px;
+    text-align: center;
+}
+
+li{
+    display: inline;
+    margin-left: 30px;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+button{
+    background-color: blueviolet;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 25px;
+    border-width: 1px;
+    border-color: black;
+    font-size: 20px;
+}
+
+button:hover{
+    background-color: chartreuse;
+}
+
+button:active{
+    transform: scale(1.2);
+}
+
+.dices{
+    margin: 0 auto;
+    width: 420px;
+    height: 500px;
+}
+
+#d4{
+    width: 100%;
+    height: 80%;
+    background: url("d4.png");
+    background-size: 100%;
+    text-align: center;
+    margin-top: 13%;
+}
+
+#d6{
+    width: 100%;
+    height: 80%;
+    background: url("d6.png");
+    background-size: 100%;
+    text-align: center;
+    margin-top: 13%;
+}
+
+#d8{
+    width: 100%;
+    height: 90%;
+    background: url("d8.png");
+    background-size: 100%;
+    text-align: center;
+    margin-top: 13%;
+}
+
+#d10{
+    width: 100%;
+    height: 73%;
+    background: url("d10.png");
+    background-size: 100%;
+    text-align: center;
+    margin-top: 13%;
+}
+
+#d12{
+    width: 100%;
+    height: 95%;
+    background: url("d12.png");
+    background-size: 100%;
+    text-align: center;
+    margin-top: 13%;
+}
+
+#d20{
+    width: 100%;
+    height: 100%;
+    background: url("d20.png");
+    background-size: 100%;
+    text-align: center;
+    margin-top: 13%;
+}
+
+#d4, #d6, #d8, #d10, #d12, #d20{
+    display: none;
+}
+
+#d4:hover, #d6:hover, #d8:hover, #d10:hover, #d12:hover , #d20:hover{
+    -webkit-animation: swing 0.5s ease;
+    animation: swing 0.5s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+#valor_d20:active, #valor_d12:active, #valor_d10:active, #valor_d8:active, #valor_d6:active, #valor_d4:active{
+    color: rgb(74, 255, 67);
+}
+
+p{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding-top: 50%;
+    font-size: 60px;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+@-webkit-keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-10px);
+       transform: translateX(-10px);
+    } 
+    50%
+    {
+        -webkit-transform: translateX(6px);
+        transform: translateX(6px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-6px);
+        transform: translateX(-6px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(4px);
+        transform: translateX(4px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+@keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-10px);
+       transform: translateX(-10px);
+    } 
+    50%
+    {
+        -webkit-transform: translateX(6px);
+        transform: translateX(6px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-6px);
+        transform: translateX(-6px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(4px);
+        transform: translateX(4px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
